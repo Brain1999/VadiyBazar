@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtt"
+                android:layout_marginTop="120dp"
+                android:textSize="32sp"
+                android:textColor="@color/coloBack"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ro'yhatdan o'tish"/>
+            <EditText
+                android:id="@+id/register_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="20dp"
+                android:layout_below="@+id/txtt"
+                android:background="@drawable/input_background"
+                android:hint="Ismingiz"
+                android:textColor="@color/coloBack"
+                android:textColorHint="@color/coloBack"
+                android:textStyle="bold"
+                android:textSize="18sp"
+
+                />
+            <EditText
+                android:id="@+id/register_phone_number_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/register_name_input"
+                android:padding="20dp"
+                android:background="@drawable/input_background"
+                android:hint="Username tanlang"
+                android:textColor="@color/coloBack"
+                android:textColorHint="@color/coloBack"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:id="@+id/register_parol_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/register_phone_number_input"
+                android:padding="20dp"
+                android:background="@drawable/input_background"
+                android:hint="Parol tanlang"
+                android:textColor="@color/coloBack"
+                android:inputType="textPassword"
+                android:textColorHint="@color/coloBack"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/register_parol_input"
+                android:background="@drawable/button_background"
+                android:text="Kirish"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

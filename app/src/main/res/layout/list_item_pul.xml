@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="#eee">
+
+    <RelativeLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/tur"
+            android:layout_below="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To'lov turi"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/raqam"
+            android:layout_below="@+id/tur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Raqam"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/coin"
+            android:layout_below="@+id/raqam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coin"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/btn_tulov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To'lov"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_below="@+id/coin"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

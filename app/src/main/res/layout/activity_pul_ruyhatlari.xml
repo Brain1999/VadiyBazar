@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAA"
+    android:padding="16dp"
+    tools:context="com.dasturchi.app.vadiybazar.PulRuyhatlari">
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recycler_menu"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:id="@+id/navbat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:text="Navbat"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/phone"
+        android:layout_below="@+id/navbat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Phone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/phone"
+        android:textStyle="bold"
+        android:text="Tur"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/raqam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/tur"
+        android:textStyle="bold"
+        android:text="Raqam"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/coin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/raqam"
+        android:textStyle="bold"
+        android:text="Coin"
+        android:textColor="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btn_tulov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Tulov"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="18dp"
+        android:textAllCaps="false"/>
+
+
+
+</RelativeLayout>

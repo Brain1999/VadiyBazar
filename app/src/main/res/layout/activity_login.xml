@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#AFFFFA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txttt"
+                android:layout_marginTop="150dp"
+                android:textSize="32sp"
+                android:textColor="@color/coloBack"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kirish"/>
+            <EditText
+                android:id="@+id/login_phone_number_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/txttt"
+                android:padding="20dp"
+                android:background="@drawable/input_background"
+                android:hint="Username"
+                android:textColor="@color/coloBack"
+                android:textColorHint="@color/coloBack"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:id="@+id/login_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/login_phone_number_input"
+                android:padding="20dp"
+                android:background="@drawable/input_background"
+                android:hint="Parol"
+                android:inputType="textPassword"
+                android:textColor="@color/coloBack"
+                android:textColorHint="@color/coloBack"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <RelativeLayout
+                android:id="@+id/relativ"
+                android:layout_below="@+id/login_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remember_me_checkbox"
+                    android:text="Yodda saqlash"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/coloBack"
+                    android:checked="true"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/relativ"
+                android:background="@drawable/button_background"
+                android:text="Kirish"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Parolni unutmang.Parolni qayta tiklash imkoni yo'q."
+                android:textColor="@color/coloBack"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/not_admin_panel_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Admin emasman!"
+                android:textSize="17sp"
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_below="@id/login_btn"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

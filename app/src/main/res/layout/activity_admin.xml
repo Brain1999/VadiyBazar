@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dasturchi.app.vadiybazar.Admin"
+    android:gravity="center"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/txttty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="Admin"
+        android:textSize="32sp"
+        android:layout_marginBottom="12dp"/>
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        android:padding="16dp"
+        android:hint="Login"
+        android:layout_below="@+id/txttty"
+        android:textColor="@color/colorPrimary"/>
+    <EditText
+        android:id="@+id/parol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_background"
+        android:padding="16dp"
+        android:inputType="textPassword"
+        android:hint="Parol"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parol"
+        android:text="Kirish"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:textColor="#fff"
+        android:layout_marginTop="16dp"/>
+
+
+</RelativeLayout>
